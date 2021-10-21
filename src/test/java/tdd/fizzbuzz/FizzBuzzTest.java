@@ -7,9 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
     private FizzBuzz fizzBuzz;
+
     @BeforeEach
     public void setup() {
-         fizzBuzz = new FizzBuzz();
+        fizzBuzz = new FizzBuzz();
     }
 
     @Test
@@ -17,101 +18,105 @@ public class FizzBuzzTest {
 
 
         //given
-        int order =1;
+        int order = 1;
         String expected = "1";
 
         //when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
+
     @Test
-    public void should_return_Fizz_when_count_off_given_order_number_multiple_of_3(){
+    public void should_return_Fizz_when_count_off_given_order_number_multiple_of_3() {
         //given
         int order = 3;
-        String expected ="Fizz";
+        String expected = "Fizz";
 
-       // when
+        // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
+
     @Test
-    public void should_return_Buzz_when_count_off_given_order_number_multiple_of_5(){
+    public void should_return_Buzz_when_count_off_given_order_number_multiple_of_5() {
         //given
         int order = 5;
-        String expected ="Buzz";
+        String expected = "Buzz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void should_return_Whizz_when_count_off_given_order_number_multiple_of_7(){
+    public void should_return_Whizz_when_count_off_given_order_number_multiple_of_7() {
         //given
         int order = 7;
-        String expected ="Whizz";
+        String expected = "Whizz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_15(){
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_15() {
         //given
         int order = 15;
-        String expected ="FizzBuzz";
+        String expected = "FizzBuzz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void should_return_FizzWhizz_when_count_off_given_order_number_multiple_of_21(){
+    public void should_return_FizzWhizz_when_count_off_given_order_number_multiple_of_21() {
         //given
         int order = 21;
-        String expected ="FizzWhizz";
+        String expected = "FizzWhizz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
+
     @Test
-    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_35(){
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_35() {
         //given
         int order = 35;
-        String expected ="BuzzWhizz";
+        String expected = "BuzzWhizz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
+
     @Test
-    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_105(){
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_105() {
         //given
         int order = 105;
-        String expected ="FizzBuzzWhizz";
+        String expected = "FizzBuzzWhizz";
 
         // when
         String actual = fizzBuzz.countOff(order);
 
         //then
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 }
