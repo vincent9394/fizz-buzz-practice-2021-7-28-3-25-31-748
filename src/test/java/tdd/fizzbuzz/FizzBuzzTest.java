@@ -64,4 +64,54 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected,actual);
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_15(){
+        //given
+        int order = 15;
+        String expected ="FizzBuzz";
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    public void should_return_FizzWhizz_when_count_off_given_order_number_multiple_of_21(){
+        //given
+        int order = 21;
+        String expected ="FizzWhizz";
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_35(){
+        //given
+        int order = 35;
+        String expected ="BuzzWhizz";
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void should_return_FizzBuzz_when_count_off_given_order_number_multiple_of_105(){
+        //given
+        int order = 105;
+        String expected ="FizzBuzzWhizz";
+
+        // when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected,actual);
+    }
 }
